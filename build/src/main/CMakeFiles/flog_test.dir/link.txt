@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/flog_test.dir/main.c.o  -o ../../../dist/flog_test  -L/home/fluency/workspace/Flog/lib -rdynamic -lflog -Wl,-rpath,/home/fluency/workspace/Flog/lib 

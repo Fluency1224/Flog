@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/flog.h
+stdio.h
+-
+unistd.h
+-
+string.h
+-
+sys/types.h
+-
+
+/home/fluency/workspace/Flog/src/flog/flog.c
+string.h
+-
+stdbool.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+stdio.h
+-
+stdarg.h
+-
+flog.h
+-
+

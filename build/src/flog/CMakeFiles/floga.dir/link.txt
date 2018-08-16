@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libflog.a  CMakeFiles/floga.dir/flog.c.o
+/usr/bin/ranlib ../../../lib/libflog.a

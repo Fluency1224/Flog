@@ -1,0 +1,17 @@
+#1.指定头文件目录
+INCLUDE_DIRECTORIES(
+	${CMAKE_SOURCE_DIR}/include
+	)
+LINK_DIRECTORIES(
+	${CMAKE_SOURCE_DIR}/lib
+	)
+LINK_LIBRARIES(
+        flog 
+	)
+#2.指定源文件目录，并查找当前目录下所有源文件，将名称保存到SRC_FILE变量中
+AUX_SOURCE_DIRECTORY(${CMAKE_CURRENT_SOURCE_DIR}/ SEC_LIST)
+
+#3.生成可执行文件
+ADD_EXECUTABLE(flog_test ${SEC_LIST})
+#7.将生成的可执行文件存放到dist目录下
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/dist)
